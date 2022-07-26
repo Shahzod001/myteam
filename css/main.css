@@ -322,3 +322,9 @@ image{
     mix-blend-mode: normal;
     opacity: 0.6;
 }
+.svg{
+    color: var(--main-bg-colorfff);
+}
+.svg:hover{
+    color: #f67e7e;
+}
