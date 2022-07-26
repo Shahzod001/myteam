@@ -210,3 +210,40 @@ image{
     mix-blend-mode: normal;
     opacity: 0.8;
 }
+.site-article {
+    padding: 76px 0;
+    background-color: var(--main-bg-colorf67e7e);
+}
+.site-article__box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-article__box::after{
+    position: absolute;
+    top: calc(50% - 42px);
+    left: calc(50% - 760px);
+    display: inline-block;
+    content: "";
+    width: 200px;
+    height: 144px;
+    background-repeat: no-repeat;
+    background-image: url("../photos/bottom-curcle.svg");
+}
+.site-article__heading {
+    margin: 0;
+    font-weight: var(--main-font-weight);
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--main-bg-color012F34);
+}
+.site-article__link {
+    display: inline-block;
+    padding: 10px 32px;
+    border: 2px solid #012F34;
+    border-radius: 24px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-bg-color012F34);
+}
