@@ -66,6 +66,12 @@ body {
   border-radius: 24px;
 }
 
+/* a custom class for texts with red color */
+
+.text-danger {
+  color: var(--main-bg-colorf67e7e);
+}
+
 /* a custom class for display:flex */
 
 .d-flex {
@@ -165,4 +171,75 @@ body {
 .site-header .contact-link:active {
   background-color: var(--main-bg-colorfff);
   color: var(--main-bg-color000);
+}
+
+/*******************************
+    SITE HERO START
+********************************/
+
+.hero {
+  position: relative;
+  padding-top: 53px;
+  padding-bottom: 250px;
+  background-color: var(--main-bg-color014E56);
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  left: calc(50% - 720px);
+  width: 200px;
+  height: 200px;
+  background-image: url("../photos/top-lef-curcle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero::after{
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: calc(50% + 250px);
+  bottom: 0;
+  width: 358px;
+  height: 200px;
+  background-image: url("../photos/top-curcle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero__wrapper {
+  align-items: center;
+  gap: 30px;
+}
+
+.hero__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: var(--main-bg-colorfff);
+}
+
+.hero__outer {
+  position: relative;
+  width: min(445px, 50%);
+  padding-top: 79px;
+}
+
+.hero__outer::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 4px;
+  background-color: var(--main-bg-color79C8C7);
+}
+
+.hero__text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFFFFF;
 }
