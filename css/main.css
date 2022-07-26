@@ -1,16 +1,16 @@
 /* VARIABLES */
 
-:root{
-  --main-bg-colorfff : #fff;
-  --main-bg-color000:#000;
-  --main-bg-color014E56 : #014E56;
-  --main-bg-colorf67e7e : #f67e7e;
-  --main-bg-color79C8C7 : #79C8C7;
-  --main-bg-color2C6269 : #2C6269;
-  --main-bg-color012F34 : #012F34;
-  --main-bg-color002529 : #002529;
-  --main-font-size : 15px;
-  --main-font-weight : 600;
+:root {
+  --main-bg-colorfff: #fff;
+  --main-bg-color000: #000;
+  --main-bg-color014E56: #014E56;
+  --main-bg-colorf67e7e: #f67e7e;
+  --main-bg-color79C8C7: #79C8C7;
+  --main-bg-color2C6269: #2C6269;
+  --main-bg-color012F34: #012F34;
+  --main-bg-color002529: #002529;
+  --main-font-size: 15px;
+  --main-font-weight: 600;
   /* --main-line-height : 1.5; */
 }
 
@@ -18,22 +18,32 @@
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
 
-html{
+html {
   height: 100%;
   box-sizing: border-box;
 }
 
-img{
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
   display: block;
   height: auto;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -43,6 +53,23 @@ body{
   /* font-size: 16px; */
   font-weight: 500;
   /* line-height: var(--main-line-height); */
+}
+
+/* default button styling */
+.btn {
+  padding: 11px 33px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  background-color: none;
+  border-radius: 24px;
+}
+
+/* a custom class for display:flex */
+
+.d-flex {
+  display: flex;
 }
 
 /* VISUALLY-HIDDEN */
@@ -62,7 +89,7 @@ body{
 
 /* CONTAINER */
 
-.container{
+.container {
   max-width: 1150px;
   margin-right: auto;
   margin-left: auto;
@@ -72,24 +99,70 @@ body{
 
 /* STICKY-FOOTER */
 
-.site-main{
+.site-main {
   flex-grow: 1;
 }
+
 /* livvic-600 - latin */
 @font-face {
-    font-family: "Livvic";
-    font-style: normal;
-    font-weight: 600;
-    src: 
-         url("../fonts/livvic-v13-latin-600.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url("../fonts/livvic-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* livvic-700 - latin */
-  @font-face {
-    font-family: "Livvic";
-    font-style: normal;
-    font-weight: 700;
-    src:
-         url("../fonts/livvic-v13-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url("../fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url("../fonts/livvic-v13-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/livvic-v13-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* livvic-700 - latin */
+@font-face {
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("../fonts/livvic-v13-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/livvic-v13-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*******************************
+    HEADER START
+********************************/
+
+.site-header {
+  padding: 83px 0;
+  background-color: var(--main-bg-color014E56);
+}
+
+.site-header__wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__inner {
+  align-items: center;
+  gap: 80px;
+}
+
+.navigation__list {
+  gap: 40px;
+}
+
+.navigation__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-bg-colorfff);
+}
+
+.site-header .contact-link {
+  color: var(--main-bg-colorfff);
+  border: 2px solid var(--main-bg-colorfff);
+}
+
+.site-header .contact-link:active {
+  background-color: var(--main-bg-colorfff);
+  color: var(--main-bg-color000);
+}
