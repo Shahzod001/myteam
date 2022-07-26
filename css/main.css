@@ -184,7 +184,7 @@ body {
   background-color: var(--main-bg-color014E56);
 }
 
-.hero::before{
+.hero::before {
   content: "";
   position: absolute;
   left: calc(50% - 720px);
@@ -195,7 +195,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.hero::after{
+.hero::after {
   content: "";
   position: absolute;
   top: 80%;
@@ -227,7 +227,7 @@ body {
   padding-top: 79px;
 }
 
-.hero__outer::before{
+.hero__outer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -242,4 +242,144 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
+}
+
+/*******************************
+    STORIES START
+********************************/
+
+.stories {
+  position: relative;
+  background-color: var(--main-bg-color014E56);
+  padding: 140px 0;
+}
+
+.stories::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  width: 100px;
+  height: 100px;
+  background-image: url("../photos/kvd.svg");
+}
+
+.stories::after {
+  content: "";
+  position: absolute;
+  top: 78%;
+  left: calc(50% + 600px);
+  bottom: 0px;
+  width: 200px;
+  height: 200px;
+  background-image: url("../photos/bottom-curcle.svg");
+  background-repeat: no-repeat;
+}
+
+.stories__title {
+  margin-top: 0;
+  margin-bottom: 92px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--main-bg-colorfff);
+}
+
+.stories__list {
+  display: flex;
+  gap: 30px;
+}
+
+.stories__item {
+  position: relative;
+  padding-bottom: 94px;
+
+}
+
+.stories__item::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 67px;
+  height: 56px;
+  background-image: url("../photos/“.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.stories__item::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+.stories__item:nth-child(1)::after{
+  background-image: url("../photos/red-girl.png");
+}
+
+.stories__item:nth-child(2)::after{
+  background-image: url("../photos/white-girl.png");
+}
+
+.stories__item:nth-child(3)::after{
+  background-image: url("../photos/man.png");
+}
+
+
+.stories__quote {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.stories__text {
+  z-index: 2;
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--main-bg-colorfff);
+}
+
+.stories__author {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-bg-color79C8C7);
+  text-align: center;
+}
+
+.stories__desc {
+  margin-bottom: 32px;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--main-bg-colorfff);
 }
