@@ -679,6 +679,7 @@
 /* ABOUT-PAGE INTRO-SECTION */
 
 .intro {
+  position: relative;
   padding: 120px 0;
   justify-content: space-between;
   background: var(--main-bg-color014E56);
@@ -686,7 +687,6 @@
 .intro::after{
   content: "";
   position: absolute;
-  top: 117.5%;
   left: calc(50% + 660px);
   bottom: 0;
   width: 100px;
