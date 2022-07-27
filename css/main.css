@@ -754,8 +754,6 @@ color: var(--main-bg-colorfff);
   background-repeat: no-repeat;
   background-image: url("../photos/curcle.svg");
 }
-.clients__box {
-}
 .clients__heading {
 margin: 0;
 margin-bottom: 70px;
@@ -770,7 +768,7 @@ color: var(--main-bg-colorfff);
   align-items: center;
   justify-content: space-between;
 }
-.clients__item {
+/* .clients__item {
 }
 .clients__link {
-}
+} */
