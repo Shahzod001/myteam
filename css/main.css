@@ -115,7 +115,7 @@ image{
     url("../fonts/livvic-v13-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url("../fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-.site-header {
+/* .site-header {
 }
 .site-main {
 }
@@ -123,7 +123,7 @@ image{
 }
 .site-footer {
     
-}
+} */
 .build {
     padding: 140px 0;
     background-color: var(--main-bg-color012F34);
@@ -190,8 +190,8 @@ image{
 .build__item--Enhanced::before{
     background-image: url("../photos/curcle-target.svg");
 }
-.item {
-}
+/* .item {
+} */
 .item__box{
     width: 445px;
 }
@@ -269,14 +269,13 @@ image{
     display: flex;
     width: 449px;
 }
-.parent-box__child {
-    
-}
+/* .parent-box__child {
+} */
 .parent-box__child--left {
     margin-right: 125px;
 }
-.footer {
-}
+/* .footer {
+} */
 .footer__box {
     margin-top: 25px;
 }
@@ -296,8 +295,8 @@ image{
     mix-blend-mode: normal;
     opacity: 0.6;
 }
-.parent-box__child--right {
-}
+/* .parent-box__child--right {
+} */
 .footer__list {
     margin-bottom: 53px;
     display: flex;
@@ -310,10 +309,10 @@ image{
 .footer__item:nth-child(1){
     margin-left: 0;
 }
-.footer__link {
+/* .footer__link {
 }
 .footer__logo {
-}
+} */
 .footer__text {
     font-size: 15px;
     line-height: 25px;
