@@ -258,7 +258,7 @@
   .hero::after {
     content: "";
     position: absolute;
-    top: 80%;
+    top: 80.9%;
     left: calc(50% + 250px);
     bottom: 0;
     width: 358px;
@@ -673,3 +673,60 @@
   .svg:hover{
       color: #f67e7e;
   }
+
+
+
+/* ABOUT-PAGE INTRO-SECTION */
+
+.intro {
+  padding: 120px 0;
+  justify-content: space-between;
+  background: var(--main-bg-color014E56);
+}
+.intro::after{
+  content: "";
+  position: absolute;
+  top: 117.5%;
+  left: calc(50% + 660px);
+  bottom: 0;
+  width: 100px;
+  height: 200px;
+  background-image: url("../photos/curcle-half.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.intro__box {
+  display: flex;
+}
+.left {
+  width: 350px;
+}
+.left__heading {
+margin: 0;
+font-weight: var(--main-font-weight);
+font-size: 64px;
+line-height: 100px;
+color: var(--main-bg-colorfff);
+}
+.right {
+  position: relative;
+  width: 730px;
+  padding-top: 79px;
+}
+.right::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 4px;
+  background-color: var(--main-bg-colorf67e7e)
+}
+.right__minibox {
+  display: block;
+  margin-bottom: 40px;
+  width: 50px;
+  height: 4px;
+  background: #F67E7E;
+}
+.right__text {
+}
