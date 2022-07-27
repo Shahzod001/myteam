@@ -240,7 +240,7 @@
   .hero::before {
     content: "";
     position: absolute;
-    left: calc(50% - 720px);
+    left: calc(50% - 760px);
     width: 200px;
     height: 200px;
     background-image: url("../photos/top-lef-curcle.svg");
@@ -311,7 +311,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: calc(50% - 720px);
+    left: calc(50% - 760px);
     width: 100px;
     height: 100px;
     background-image: url("../photos/kvd.svg");
@@ -320,7 +320,7 @@
   .stories::after {
     content: "";
     position: absolute;
-    top: 78%;
+    top: 81%;
     left: calc(50% + 600px);
     bottom: 0px;
     width: 200px;
