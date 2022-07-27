@@ -192,7 +192,7 @@
   ********************************/
   
   .site-header {
-    padding: 83px 0;
+    padding: 73px 0;
     background-color: var(--main-bg-color014E56);
   }
   
@@ -682,7 +682,7 @@
 
 .intro {
   position: relative;
-  padding: 120px 0;
+  padding: 47px 0 120px 0;
   justify-content: space-between;
   background: var(--main-bg-color014E56);
 }
