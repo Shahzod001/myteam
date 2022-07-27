@@ -119,7 +119,8 @@
     background-color: none;
     border-radius: 24px;
   }
-  
+  .btn:hover{
+  }
   /* a custom class for texts with red color */
   
   .text-danger {
@@ -215,12 +216,20 @@
     line-height: 28px;
     color: var(--main-bg-colorfff);
   }
-  
+  .navigation__link:hover{
+    color: #F67E7E;
+  }
   .site-header .contact-link {
     color: var(--main-bg-colorfff);
     border: 2px solid var(--main-bg-colorfff);
   }
-  
+  .site-header .contact-link:hover{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+        color: #002529;
+      
+  }
   .site-header .contact-link:active {
     background-color: var(--main-bg-colorfff);
     color: var(--main-bg-color000);
@@ -623,6 +632,9 @@
   }
   .site-link:nth-child(2) {
       margin-right: 0px;
+  }
+  .site-link:hover{
+    color: #F67E7E;
   }
   .parent-box__text {
       font-size: 15px;
