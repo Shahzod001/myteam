@@ -729,4 +729,7 @@ color: var(--main-bg-colorfff);
   background: #F67E7E;
 }
 .right__text {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-bg-colorfff);
 }
