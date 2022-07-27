@@ -108,7 +108,9 @@
       display: inline-block;
   
   }
-  
+  svg{
+    display: inline-block;
+  }
   /* default button styling */
   .btn {
     padding: 11px 33px;
@@ -732,4 +734,43 @@ color: var(--main-bg-colorfff);
   font-size: 18px;
   line-height: 28px;
   color: var(--main-bg-colorfff);
+}
+
+/* START CLIENTS SECTION */
+
+.clients {
+  position: relative;
+  padding: 140px 0;
+  background-color: var(--main-bg-color012F34);
+}
+.clients::before{
+  position: absolute;
+  top: 0;
+  left: calc(50% - 760px);
+  display: inline-block;
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-image: url("../photos/curcle.svg");
+}
+.clients__box {
+}
+.clients__heading {
+margin: 0;
+margin-bottom: 70px;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+color: var(--main-bg-colorfff);
+}
+.clients__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients__item {
+}
+.clients__link {
 }
