@@ -259,7 +259,7 @@ button {
 
 .hero {
   position: relative;
-  padding-top: 53px;
+  padding-top: 47px;
   padding-bottom: 250px;
   background-color: var(--main-bg-color014E56);
 }
@@ -810,11 +810,11 @@ button {
   color: var(--main-bg-colorfff);
 }
 
-.build__list {
+.site__list {
   position: relative;
 }
 
-.build__list::after {
+.site__list--after::after {
   position: absolute;
   top: calc(50% + 69px);
   left: calc(50% + 374.9px);
@@ -826,14 +826,14 @@ button {
   background-image: url("../photos/build-img.svg");
 }
 
-.build__item {
+.site__item {
   display: flex;
   width: 540px;
   margin-bottom: 32px;
   justify-content: space-between;
 }
 
-.build__item::before {
+.site__item::before {
   display: inline-block;
   content: "";
   width: 72px;
@@ -843,24 +843,21 @@ button {
 
 }
 
-.build__item--Experienced::before {
+.site__item--Experienced::before {
   background-image: url("../photos/curcle-boy.svg");
 }
 
-.build__item--Easy::before {
+.site__item--Easy::before {
   background-image: url("../photos/curcle-mech.svg");
 }
 
-.build__item--Enhanced {
+.site__item--Enhanced {
   margin-bottom: 0;
 }
 
-.build__item--Enhanced::before {
+.site__item--Enhanced::before {
   background-image: url("../photos/curcle-target.svg");
 }
-
-/* .item {
-  } */
 .item__box {
   width: 445px;
 }
@@ -1034,12 +1031,29 @@ button {
   ********************************/
 
 .staff {
+  position: relative;
   padding-top: 140px;
   padding-bottom: 170px;
   background-color: #004047;
 }
+.staff::before{
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 200px;
+  content: "";
+  background-image: url("../photos/curcle-2-1.svg");
+}
 
-
+.staff::after{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 147px;
+  height: 100px;
+  content: "";
+  background-image: url("../photos/kv-ab.svg");
+}
 .staff__wrapper{
   height: max-content;
 }
@@ -1313,8 +1327,160 @@ color: var(--main-bg-colorfff);
   align-items: center;
   justify-content: space-between;
 }
-/* .clients__item {
-}
-.clients__link {
-} */
 
+/* CONTACT PAGE START */
+.contact {
+  position: relative;
+  padding-top: 47px;
+  padding-bottom: 120px;
+  background-color: var(--main-bg-color014E56);
+}
+.contact::before{
+  position: absolute;
+  top: calc(50% - 275px);
+  content: "";
+  width: 100px;
+  height: 200px;
+  background-image: url("../photos/curcle-2-1.svg");
+}
+.contact::after{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 100px;
+  height: 225px;
+  background-image: url("../photos/contact-curcle-moon.svg");
+  background-repeat: no-repeat;
+}
+.contact__parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .contact__child {
+}
+.child {
+} */
+.child__box {
+  margin-bottom: 32px;
+}
+.child__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: var(--main-font-weight);
+  font-size: 64px;
+  line-height: 100px;
+  color: var(--main-bg-colorfff);
+}
+.child__text {
+  font-weight: var(--main-font-weight);
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--main-bg-colorf67e7e);
+}
+::placeholder:not(:focus){
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+/* .site__list {
+}
+.site__item {
+}
+.site__item--Experienced {
+} */
+.item {
+  display: flex;
+  align-items: center;
+}
+.site__item--mb{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.site__item--mb:nth-child(3){
+  margin-bottom: 0;
+}
+/* .item__box {
+}
+.item__heading {
+}
+.item__text {
+}
+.site__item--Easy {
+}
+.site__item--Enhanced {
+} */
+.contact__form {
+  width: 540px;
+}
+.contact__input {
+  margin-top: 17px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: var(--main-bg-colorfff);
+  mix-blend-mode: normal;
+  padding: 0 81px 17px 13px;
+  size: 445px;
+  background-color: var(--main-bg-color014E56);
+  width: 540px;
+  border: none;
+  border-bottom: 1px solid var(--main-bg-colorfff);
+  outline: none;
+}
+.contact__input:focus{
+  font-size: 15px;
+  border-bottom: 1px solid var(--main-bg-color79C8C7);
+}
+.contact__input:not(:focus):not(:placeholder-shown):invalid{
+  color: #F67E7E;
+
+mix-blend-mode: normal;
+opacity: 0.6;
+}
+/* .contact__label{
+
+} */
+.contact__input--name {
+  margin-top: 0;
+}
+/* .contact__input--email {
+}
+.contact__input--company {
+}
+.contact__input--title {
+} */
+.contact__input--message {
+  padding: 0 0 58px 16px;
+}
+.contact__btn {
+  display: block;
+  padding: 10px 32px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #004047;
+  background: var(--main-bg-colorfff);
+  border: 2px solid var(--main-bg-colorfff);
+  border-radius: 24px;
+}
+placeholder:invalid:not(:focus){
+  color: #F67E7E;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.contact__minibox{
+  margin-bottom: 17px;
+  opacity: 0;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--main-bg-colorf67e7e);
+}
+input:not(:focus):not(:placeholder-shown):invalid ~ .contact__minibox{
+  opacity: 1;
+}
